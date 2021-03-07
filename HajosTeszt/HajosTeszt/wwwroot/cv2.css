@@ -1,0 +1,74 @@
+﻿*{
+    box-sizing:border-box;
+}
+
+body{
+    font-weight: bold;
+    text-align: center;
+}
+
+div {
+    margin: 10px;
+    padding: 30px;
+    background-color: #ffffff
+}
+
+#szöveg {
+    background-color: #ffffff;
+    color: #071928;
+}
+
+#header {
+    background-color: aquamarine;
+    text-align: center
+}
+
+h1, h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+h3 {
+    font-style: italic
+}
+
+#listák {
+    color: #071928;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#aside {
+    background-color: aquamarine;
+    padding: 20px;
+}
+#article {
+    text-align: center;
+    background: azure;
+    padding: 20px;
+    display: flex;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    #article {
+        flex: 1 1 75%;
+    }
+
+    #aside {
+        flex: 1 1 25%;
+    }
+}
